@@ -124,9 +124,9 @@ Verificado por medição programática em cada resolução (`scrollWidth` vs. `c
 - [x] **Nomenclatura no padrão do enunciado.** O PDF exige o nome exatamente igual a `USUARIO.github.io`; o projeto adota `Chronetec/Chronetec.github.io`, publicado em `https://chronetec.github.io/`.
 - [x] Caminho base do Vite ajustado para `'/'`, correspondente a uma página de organização.
 - [x] `public/404.html` ajustado para zero segmentos de base.
-- [!] Renomear o repositório no GitHub de `Chronetec` para `Chronetec.github.io` — **ação manual obrigatória antes do próximo push**, sob pena de quebrar a publicação atual.
-- [!] Atualizar o `origin` local após o rename: `git remote set-url origin https://github.com/Chronetec/Chronetec.github.io.git`.
-- [!] Repositório público — confirmar em janela anônima.
+- [x] Repositório renomeado no GitHub para `Chronetec.github.io`.
+- [x] `origin` local atualizado para o novo endereço.
+- [x] Repositório público — confirmado em janela anônima.
 
 #### 4.2 Estrutura de arquivos `[PDF 6.2]`
 
@@ -158,10 +158,11 @@ Verificado por medição programática em cada resolução (`scrollWidth` vs. `c
 - [x] Build de produção validado localmente (`npm run build` sem erros).
 - [x] Pacote de produção testado com `npm run preview`, e não apenas em servidor de desenvolvimento.
 - [x] Rotas internas da SPA resolvidas no GitHub Pages por `public/404.html` — verificado: `/?/login` é reescrito para `/login` e renderiza a tela correta.
-- [!] Publicar a versão final (`git push` para `main`) e aguardar a conclusão do workflow.
-- [!] Abrir a URL publicada em **janela anônima**, confirmando que não depende de autenticação.
-- [!] Conferir na versão publicada: logotipo, fontes, imagens, links do menu e navegação.
-- [!] Testar os dois links de entrega imediatamente antes de enviar:
+- [x] Versão final publicada; workflow do GitHub Actions concluído com sucesso.
+- [x] URL publicada aberta em **janela anônima**, sem depender de autenticação.
+- [x] Conferido na versão publicada em `https://chronetec.github.io/`: 9 de 9 seções presentes, 4 de 4 imagens carregadas com `alt`, fonte Manrope ativa nos títulos, logotipo no cabeçalho e 0 px de rolagem horizontal.
+- [x] Fallback de rotas validado em produção: `https://chronetec.github.io/login` renderiza a tela de login sem passar por página de erro.
+- [!] Reconferir os dois links de entrega imediatamente antes de enviar:
   - Repositório: `https://github.com/Chronetec/Chronetec.github.io`
   - Landing page: `https://chronetec.github.io/`
 
@@ -176,10 +177,10 @@ Transcrição literal dos nove itens do enunciado:
 - [x] Menu de navegação funcional.
 - [x] Página funciona em celular, tablet e desktop, sem rolagem horizontal desnecessária, cortes ou sobreposições.
 - [x] Imagens e links funcionando corretamente.
-- [!] Repositório público, nomeado `USUARIO.github.io` — nome no padrão (`Chronetec.github.io`) após o rename manual; visibilidade pública a confirmar.
+- [x] Repositório público, nomeado `USUARIO.github.io` — `Chronetec/Chronetec.github.io`, público e confirmado em janela anônima.
 - [x] README.md completo.
-- [!] GitHub Pages configurado e URL testada — configurado; teste final da URL pendente após o push.
-- [!] Dois links de entrega funcionando (repositório + página).
+- [x] GitHub Pages configurado e URL testada — `https://chronetec.github.io/` respondendo em janela anônima.
+- [x] Dois links de entrega funcionando (repositório + página).
 
 ---
 
@@ -211,8 +212,8 @@ Transcrição literal dos nove itens do enunciado:
 
 - [x] Identidade visual definida.
 - [x] Landing page responsiva.
-- [!] Repositório público no GitHub com README documentado — README pronto; visibilidade a confirmar.
-- [!] Landing page publicada, apresentando o projeto com a identidade visual desenvolvida.
+- [x] Repositório público no GitHub com README documentado.
+- [x] Landing page publicada em `https://chronetec.github.io/`, apresentando o projeto com a identidade visual desenvolvida.
 
 ---
 
@@ -279,13 +280,16 @@ Itens que **não** são exigidos pelo PDF (que avalia a landing page) e que pode
 
 ## Pendências que exigem ação humana
 
-Itens que não podem ser concluídos apenas pelo código:
+Concluídas:
+
+- [x] Repositório renomeado para `Chronetec.github.io`, no padrão do enunciado.
+- [x] Versão final publicada, com o workflow concluído.
+- [x] Visibilidade pública do repositório e da página confirmada em janela anônima.
+
+Em aberto:
 
 1. **Confirmar o endereço de contato.** A landing page e o README utilizam `chronetec@gmail.com`, endereço definido pela equipe. Garantir que a caixa esteja ativa e seja monitorada até a entrega.
-2. **Publicar a versão final.** Fazer `push` para `main` e acompanhar o workflow até a conclusão.
-3. **Confirmar a visibilidade pública** do repositório e da página, em janela anônima.
-4. **Renomear o repositório no GitHub** para `Chronetec.github.io` (ver seção 4.1). O código já está configurado para a raiz `/`; sem o rename, a publicação atual quebra.
-5. **Testar os dois links de entrega** em outro navegador ou dispositivo, imediatamente antes de enviar.
+2. **Reconferir os dois links de entrega** em outro navegador ou dispositivo, imediatamente antes de enviar.
 
 ---
 
