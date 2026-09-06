@@ -164,3 +164,25 @@
   background: var(--primary);
   transform: scale(1.35);
 }
+
+/* ==========================================================================
+   Correção do botão "Novo compromisso" no layout compacto
+   Ao virar um botão só de ícone, o rótulo continua no DOM com font-size: 0,
+   mas ainda conta como item flex — o gap de 8px da regra base deslocava o
+   ícone para a esquerda. Zerando o gap e igualando largura e altura, o
+   ícone volta ao centro exato.
+   ========================================================================== */
+
+@media (max-width: 860px) {
+  .quick-add {
+    width: 42px;
+    height: 42px;
+    gap: 0;
+  }
+
+  .quick-add span {
+    display: grid;
+    place-items: center;
+    line-height: 0;
+  }
+}
