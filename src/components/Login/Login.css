@@ -52,3 +52,13 @@
   .mobile-auth-logo { display: block; margin-bottom: 38px; }.mobile-auth-logo .auth-logo { color: var(--navy); }.mobile-auth-logo .auth-logo img { border: 1px solid var(--border); }
 }
 @media (max-width: 520px) { .field-columns { grid-template-columns: 1fr; gap: 0; }.auth-card h2 { font-size: 30px; } }
+
+/* Alinhamento dos ícones SVG que substituíram os glifos tipográficos. */
+.back-link { align-items: center; }
+.back-link svg { color: var(--primary); flex: 0 0 auto; }
+.signup-benefits li { display: flex; align-items: center; }
+.signup-benefits svg { display: block; }
+.mini-check svg { display: block; }
+.field-icon { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; }
+.field-icon svg { display: block; }
+.auth-submit { display: inline-flex; align-items: center; justify-content: center; gap: 8px; }

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chronetec | Redirecionando</title>
+    <script>
+      // O GitHub Pages não conhece as rotas internas da SPA (ex.: /login).
+      // Este script converte o caminho solicitado em uma query string, devolve o
+      // visitante para o index.html e o main.jsx restaura a rota original.
+      // Repositório de página de organização (Chronetec.github.io): a raiz do site
+      // é '/', portanto nenhum segmento do caminho pertence ao repositório.
+      var segmentosDaBase = 0;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentosDaBase).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(segmentosDaBase).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+    <p>Redirecionando para a Chronetec…</p>
+  </body>
+</html>

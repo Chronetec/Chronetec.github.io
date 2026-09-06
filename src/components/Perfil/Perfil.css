@@ -13,4 +13,15 @@
 .profile-tip { padding: 15px; display: flex; gap: 12px; border-radius: 12px; background: #f7f6ff; }.profile-tip > span { color: var(--primary); }.profile-tip strong { display: block; font-size: 9px; margin-bottom: 4px; }.profile-tip p { margin: 0; color: #8490a0; font-size: 8px; line-height: 1.5; }
 .profile-footer { margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--border); text-align: right; }.logout-button { padding: 10px 14px; border: 1px solid #ffdadd; border-radius: 9px; color: #d55059; background: #fff6f6; font-size: 9px; font-weight: 800; cursor: pointer; }
 @media (max-width: 760px) { .profile-layout { grid-template-columns: 1fr; padding-top: 35px; }.profile-summary { max-width: 100%; }.profile-card { padding: 23px; } }
-@media (max-width: 500px) { .profile-header { padding: 0 16px; }.back-dashboard { font-size: 0; }.back-dashboard::after { content: '← Calendário'; font-size: 10px; }.info-grid { grid-template-columns: 1fr; }.profile-info-item.wide { grid-column: auto; }.profile-card-header { flex-direction: column; }.secure-badge { align-self: flex-start; } }
+@media (max-width: 500px) { .profile-header { padding: 0 16px; }.back-dashboard { font-size: 0; }.back-dashboard::after { content: 'Calendário'; font-size: 10px; }.info-grid { grid-template-columns: 1fr; }.profile-info-item.wide { grid-column: auto; }.profile-card-header { flex-direction: column; }.secure-badge { align-self: flex-start; } }
+
+/* Alinhamento dos ícones SVG que substituíram os glifos tipográficos. */
+.back-dashboard { display: inline-flex; align-items: center; gap: 6px; }
+.back-dashboard svg { flex: 0 0 auto; }
+.secure-badge { display: inline-flex; align-items: center; gap: 6px; }
+.profile-tip > span { display: inline-flex; align-items: flex-start; flex: 0 0 auto; }
+.avatar-ring i svg { display: block; }
+@media (max-width: 500px) {
+  /* Mantém o ícone visível mesmo com o rótulo reduzido a zero. */
+  .back-dashboard svg { font-size: 15px; }
+}

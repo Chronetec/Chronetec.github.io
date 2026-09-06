@@ -63,3 +63,104 @@
   .dashboard-content { padding: 24px 14px 40px; }.year-grid { grid-template-columns: 1fr; }.month-card { padding: 20px; }.day-number { font-size: 10px; }.year-picker { flex: 0 0 auto; }.upcoming-row { margin-left: -2px; margin-right: -2px; }
 }
 @media (max-width: 440px) { .calendar-toolbar p { display: none; }.calendar-toolbar h2 { font-size: 17px; }.modal-columns { grid-template-columns: 1fr; }.selected-events > div { grid-template-columns: auto 1fr auto; }.selected-events small { display: none; } }
+
+/* Alinhamento dos ícones SVG que substituíram os glifos tipográficos. */
+.sidebar-tip > span { display: inline-flex; align-items: center; }
+/* O botão de menu existe apenas no layout compacto; no desktop a sidebar
+   já está sempre visível, então ele permanece oculto (regra base .menu-button). */
+@media (max-width: 860px) {
+  .menu-button { display: inline-flex; align-items: center; justify-content: center; }
+}
+
+/* ==========================================================================
+   Carrossel de meses (telas reduzidas)
+   Substitui a rolagem vertical de doze cartões por um mês de cada vez,
+   navegável por botões, por gesto de arrastar e pelos indicadores.
+   ========================================================================== */
+
+.month-carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  touch-action: pan-y;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.carousel-controls button {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.carousel-controls button:hover {
+  background: var(--primary-soft);
+}
+
+.carousel-controls strong {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.25;
+  font-size: 16px;
+  color: var(--navy);
+}
+
+.carousel-controls strong small {
+  color: #8995a5;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* O nome do mês já aparece no controle do carrossel. */
+.month-carousel .month-card h3 {
+  display: none;
+}
+
+.month-carousel .month-card {
+  padding: 18px 16px 22px;
+}
+
+.month-carousel .day-number {
+  font-size: 14px;
+}
+
+.carousel-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.carousel-dots button {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #d3d8e3;
+  cursor: pointer;
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+
+.carousel-dots button.active {
+  background: var(--primary);
+  transform: scale(1.35);
+}

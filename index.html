@@ -7,6 +7,27 @@
     <meta name="theme-color" content="#5b61e8" />
     <meta name="description" content="Chronetec — cronogramas escolares organizados em um só lugar." />
     <title>Chronetec | O tempo da escola em sintonia</title>
+    <script>
+      // Restaura a rota original preservada pelo public/404.html do GitHub Pages,
+      // antes do React Router assumir o controle da navegação.
+      (function () {
+        var busca = window.location.search;
+        if (busca && busca[1] === '/') {
+          var rota = busca
+            .slice(1)
+            .split('&')
+            .map(function (parte) {
+              return parte.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(
+            null,
+            '',
+            window.location.pathname.slice(0, -1) + rota + window.location.hash
+          );
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
