@@ -281,7 +281,7 @@ Itens que **não** são exigidos pelo PDF (que avalia a landing page) e que pode
 
 Itens que não podem ser concluídos apenas pelo código:
 
-1. **Confirmar o endereço de contato.** A landing page e o README utilizam `contato.chronetec@gmail.com`. Esse endereço precisa existir e ser monitorado pela equipe, ou ser substituído por um endereço real antes da entrega.
+1. **Confirmar o endereço de contato.** A landing page e o README utilizam `chronetec@gmail.com`, endereço definido pela equipe. Garantir que a caixa esteja ativa e seja monitorada até a entrega.
 2. **Publicar a versão final.** Fazer `push` para `main` e acompanhar o workflow até a conclusão.
 3. **Confirmar a visibilidade pública** do repositório e da página, em janela anônima.
 4. **Renomear o repositório no GitHub** para `Chronetec.github.io` (ver seção 4.1). O código já está configurado para a raiz `/`; sem o rename, a publicação atual quebra.

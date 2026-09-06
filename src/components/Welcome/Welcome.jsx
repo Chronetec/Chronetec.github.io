@@ -603,14 +603,14 @@ const Welcome = () => {
             </a>
             <a
               className="ghost-button light"
-              href="mailto:contato.chronetec@gmail.com?subject=Contato%20-%20Projeto%20Chronetec"
+              href="mailto:chronetec@gmail.com?subject=Contato%20-%20Projeto%20Chronetec"
             >
               <Icons.Mail /> Entrar em contato
             </a>
           </div>
           <p className="cta-contact-note">
             Fale com a equipe pelo e-mail{' '}
-            <a href="mailto:contato.chronetec@gmail.com">contato.chronetec@gmail.com</a>.
+            <a href="mailto:chronetec@gmail.com">chronetec@gmail.com</a>.
           </p>
         </section>
       </main>

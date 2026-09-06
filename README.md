@@ -240,4 +240,4 @@ O caminho base do Vite é `'/'` (`vite.config.js`), correspondente à raiz de um
 
 ## 12. Contato
 
-Dúvidas sobre o projeto podem ser encaminhadas para **contato.chronetec@gmail.com** ou registradas como *issue* no repositório.
+Dúvidas sobre o projeto podem ser encaminhadas para **chronetec@gmail.com** ou registradas como *issue* no repositório.
