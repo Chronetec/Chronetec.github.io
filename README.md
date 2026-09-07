@@ -78,13 +78,46 @@ A plataforma atende diretamente a três perfis da comunidade escolar:
 ## 6. Identidade Visual
 
 ### 6.1 Logotipo
-O logotipo da Chronetec combina um relógio estilizado em forma de órbita com as cores da identidade institucional da equipe, armazenado e versionado diretamente no repositório:
+
+O símbolo da Chronetec é construído sobre três decisões de design, todas ligadas ao nome e à proposta do projeto:
+
+| Elemento | Significado |
+| :--- | :--- |
+| **A letra "C"** | Inicial de **Chronetec**. O arco aberto que forma a marca é, ao mesmo tempo, a letra e a moldura do relógio. |
+| **O relógio** | Deriva de *chronos* (tempo), raiz do nome. Os ponteiros marcam o eixo central da proposta: organizar o tempo do ano letivo. |
+| **Os três pontos coloridos** | Representam os três públicos que o sistema atende, posicionados ao redor do relógio para indicar que todos compartilham o mesmo calendário. |
+
+Cada ponto colorido corresponde a um público:
+
+| Cor | Código HEX | Público representado |
+| :--- | :--- | :--- |
+| Índigo | `#5B61E8` | Estudantes |
+| Ciano | `#35C6D4` | Professores e coordenação |
+| Vermelho | `#C81928` | Secretaria e direção |
+
+O traço do "C" e os ponteiros usam o Navy Profundo `#132238`, a mesma cor de texto da interface, o que mantém a marca coerente com a página em que ela aparece.
+
+Arquivos armazenados e versionados no repositório:
+
 - Logotipo completo: [`public/chronetec-logo.svg`](./public/chronetec-logo.svg)
 - Símbolo / Marca: [`public/chronetec-mark.svg`](./public/chronetec-mark.svg)
 - Favicon: [`public/favicon.svg`](./public/favicon.svg)
 
+Os arquivos são vetoriais (SVG), o que garante nitidez em qualquer resolução e permite que o símbolo funcione tanto no favicon de 16 px quanto no logotipo de 260 px do cabeçalho.
+
 ### 6.2 Paleta de Cores
-A paleta foi desenvolvida considerando conformidade com contraste visual (WCAG AA), harmonia institucional e distinção de tipos de eventos acadêmicos:
+
+A paleta foi desenvolvida considerando conformidade com contraste visual (WCAG AA), harmonia institucional e distinção de tipos de eventos acadêmicos.
+
+#### Cores institucionais do logotipo
+
+| Cor | Nome / Finalidade | Código HEX | Amostra |
+| :--- | :--- | :--- | :--- |
+| **Institucional 1** | Índigo (público estudante, no símbolo) | `#5B61E8` | `rgb(91, 97, 232)` |
+| **Institucional 2** | Ciano (público docente e coordenação, no símbolo) | `#35C6D4` | `rgb(53, 198, 212)` |
+| **Institucional 3** | Vermelho (secretaria e direção, no símbolo) | `#C81928` | `rgb(200, 25, 40)` |
+
+#### Cores da interface
 
 | Cor | Nome / Finalidade | Código HEX | Amostra |
 | :--- | :--- | :--- | :--- |
